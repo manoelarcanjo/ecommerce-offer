@@ -44,6 +44,7 @@ header {
         width: 100%;
         height: 100%;
         text-align: center;
+        overflow: hidden;
         img {
             width: 100vw;
         }
@@ -96,8 +97,9 @@ header {
         .banner {
             display: flex;
             justify-content: center;
+
             img {
-                width: 100vw;
+                width: 150vw;
             }
         }
     }
@@ -123,7 +125,7 @@ header {
         }
         .banner {
             img {
-                width: 100vw;
+                width: 150vw;
             }
         }
     }
