@@ -1,0 +1,151 @@
+header {
+    display: flex;
+    flex-direction: column;
+
+    .navHeader {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 3rem 1.5rem 3rem;
+
+        a {
+            display: flex;
+            align-items: center;
+
+            img {
+                transition: ease .3s;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                padding-left: 1.6rem;
+
+                img {
+                    width: 1.8rem;
+                    transition: ease .3s;
+                }
+
+                img:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .banner {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        img {
+            width: 100vw;
+        }
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    header {
+        .navHeader {
+            a {
+                img {
+                    width: 10rem;
+                }
+            }
+
+            ul {
+                li {
+                    padding-left: 2.6rem;
+                    img {
+                        width: 2.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        .navHeader {
+            a {
+                img {
+                    width: 6rem;
+                }
+            }
+
+            ul {
+                li {
+                    img {
+                        width: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header {
+        .banner {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 100vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        .navHeader {
+            padding: 1rem 1.6rem;
+            a {
+                img {
+                    width: 4rem;
+                }
+            }
+
+            ul {
+                li {
+                    img {
+                        width: 1rem;
+                    }
+                }
+            }
+        }
+        .banner {
+            img {
+                width: 100vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        .navHeader {
+            padding: 1rem 1.6rem;
+            a {
+                img {
+                    width: 4rem;
+                }
+            }
+
+            ul {
+                li {
+                    img {
+                        width: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
