@@ -9,19 +9,20 @@ main {
         align-items: center;
         padding: 1.3rem 3rem;
         border-bottom: 1px solid $gray-color;
-
+        
         h4 {
             text-transform: uppercase;
         }
     }
-
+    
     .cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin: 2rem 10%;
-
+        
         .card {
             margin-bottom: 2rem;
+            position: relative;
 
             p {
                 font-weight: 600;
@@ -42,7 +43,44 @@ main {
                 padding: 0.6rem 1.6rem;
                 border-radius: 0.5rem;
                 box-shadow: 0 4px 8px $gray-color;
+                transition: ease-in .3s;
             }
+
+            button:hover {
+                background-color: $brown-color;
+            }      
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 80%;
+                height: 75%;
+                background-color: transparent;
+                opacity: 0.5;
+                transition: background-color 0.3s ease;
+            }
+            
+            .overlay:hover {
+                background-color: $primary-color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 2560px) {
+    main {
+        .cards {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin: 2rem 10%;
+        }
+
+        .card {
+            img {
+                width: 80%;
+            }
+
         }
     }
 }
@@ -58,6 +96,10 @@ main {
         .card {
             img {
                 width: 80%;
+            }
+
+            .overlay{
+                height: 70%;
             }
         }
     }

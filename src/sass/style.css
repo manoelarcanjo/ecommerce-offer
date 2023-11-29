@@ -20,9 +20,10 @@ header .navHeader {
 header .navHeader a {
   display: flex;
   align-items: center;
+  transition: ease 0.5s;
 }
 header .navHeader a img {
-  transition: ease 0.3s;
+  transition: ease 0.5s;
 }
 header .navHeader a img:hover {
   transform: scale(1.1);
@@ -127,6 +128,7 @@ main .cards {
 }
 main .cards .card {
   margin-bottom: 2rem;
+  position: relative;
 }
 main .cards .card p {
   font-weight: 600;
@@ -145,8 +147,35 @@ main .cards .card button {
   padding: 0.6rem 1.6rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px #A5A1A1;
+  transition: ease-in 0.3s;
+}
+main .cards .card button:hover {
+  background-color: rgba(81, 34, 0, 0.7411764706);
+}
+main .cards .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 75%;
+  background-color: transparent;
+  opacity: 0.5;
+  transition: background-color 0.3s ease;
+}
+main .cards .card .overlay:hover {
+  background-color: #5CA720;
 }
 
+@media screen and (max-width: 2560px) {
+  main .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 10%;
+  }
+  main .card img {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 1024px) {
   main .cards {
     grid-template-columns: repeat(3, 1fr);
@@ -155,6 +184,9 @@ main .cards .card button {
   }
   main .card img {
     width: 80%;
+  }
+  main .card .overlay {
+    height: 70%;
   }
 }
 @media screen and (max-width: 768px) {

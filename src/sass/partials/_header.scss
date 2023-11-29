@@ -10,9 +10,10 @@ header {
         a {
             display: flex;
             align-items: center;
+            transition: ease .5s; 
 
             img {
-                transition: ease .3s;
+                transition: ease .5s;
             }
 
             img:hover {
