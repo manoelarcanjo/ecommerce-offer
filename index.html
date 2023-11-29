@@ -39,7 +39,7 @@
                 <div class="overlay"></div>
                 <p>Elixir da Eternidade</p>
                 <p>R$<span>50,00</span></p>
-                <button>Comprar</button>
+                <button onclick="toggleModal()">Comprar</button>
             </div>
 
             <div class="card">
@@ -47,7 +47,7 @@
                 <div class="overlay"></div>
                 <p>Vitamina do Sol</p>
                 <p>R$<span>50,00</span></p>
-                <button>Comprar</button>
+                <button onclick="toggleModal()">Comprar</button>
             </div>
 
             <div class="card">
@@ -55,7 +55,7 @@
                 <div class="overlay"></div>
                 <p>Vitamina da Lua</p>
                 <p>R$<span>50,00</span></p>
-                <button>Comprar</button>
+                <button onclick="toggleModal()">Comprar</button>
             </div>
 
             <div class="card">
@@ -63,7 +63,7 @@
                 <div class="overlay"></div>
                 <p>Pétalas de Amor</p>
                 <p>R$<span>50,00</span></p>
-                <button>Comprar</button>
+                <button onclick="toggleModal()">Comprar</button>
             </div>
 
             <div class="card">
@@ -71,7 +71,7 @@
                 <div class="overlay"></div>
                 <p>Essência da Natureza</p>
                 <p>R$<span>50,00</span></p>
-                <button>Comprar</button>
+                <button onclick="toggleModal()">Comprar</button>
             </div>
 
             <div class="card">
@@ -79,7 +79,7 @@
                 <div class="overlay"></div>
                 <p>Jasmin com notas de Rosa</p>
                 <p>R$<span>50,00</span></p>
-                <button>Comprar</button>
+                <button onclick="toggleModal()">Comprar</button>
             </div>
 
             <div class="card">
@@ -87,7 +87,7 @@
                 <div class="overlay"></div>
                 <p>Essência de Melissa</p>
                 <p>R$<span>50,00</span></p>
-                <button>Comprar</button>
+                <button onclick="toggleModal()">Comprar</button>
             </div>
 
             <div class="card">
@@ -95,7 +95,7 @@
                 <div class="overlay"></div>
                 <p>Pureza Iluminada</p>
                 <p>R$<span>50,00</span></p>
-                <button>Comprar</button>
+                <button onclick="toggleModal()">Comprar</button>
             </div>
 
             <div class="card">
@@ -103,10 +103,61 @@
                 <div class="overlay"></div>
                 <p>Essência de patchouli</p>
                 <p>R$<span>50,00</span></p>
-                <button>Comprar</button>
+                <button onclick="toggleModal()">Comprar</button>
             </div>
-
         </section>
     </main>
+
+    <footer>
+        <section class="mainFooter">
+            <div class="contact">
+                <ul>
+                    <li>Contato</li>
+                    <li>Termos de serviços</li>
+                    <li>Política de privacidade</li>
+                    <li>Cancelamento, troca e reembolso</li>
+                </ul>
+            </div>
+    
+            <div class="newsletter">
+                <form action="#">
+                    <label for="">Newsletter</label>
+                    <div class="inputFooter">
+                        <input type="email" placeholder="Digite seu melhor e-mail" class="email">
+                        <input type="submit" value="Inscrever" class="submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="icons">
+            <div class="redes">
+                <img src="assets/imgs/icons/insta.png" alt="logo instagram">
+                <img src="assets/imgs/icons/face.png" alt="logo facebook">
+            </div>
+
+            <div class="bandeiras">
+                <img src="assets/imgs/icons/master.png" alt="mastercard">
+                <img src="assets/imgs/icons/visa.png" alt="Visa">
+                <img src="assets/imgs/icons/paypal.png" alt="paypal">
+            </div>
+        </section>
+    </footer>
+
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modalHeader">
+            <h2>Carrinho</h2>
+            <button id="closeModal"><i class="fa-solid fa-x"></i></button>
+        </div>
+
+        <div class="modalBody">
+            <h2>Adicionado ao Carrinho!!</h2>
+        </div>
+    </div>
+
+
+    <script src="src/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a9b5462599.js" crossorigin="anonymous"></script>
 </body>
 </html>
