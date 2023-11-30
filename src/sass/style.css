@@ -181,8 +181,8 @@ main .cards .card .overlay:hover {
   }
 }
 @media screen and (max-width: 2560px) {
-  main .card .overlay:hover {
-    height: 75%;
+  main .cards .card .overlay:hover {
+    height: 80%;
   }
 }
 @media screen and (max-width: 1024px) {

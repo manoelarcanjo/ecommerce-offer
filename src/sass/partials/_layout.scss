@@ -93,11 +93,13 @@ main {
 
 @media screen and (max-width: 2560px) {
     main {
-        .card {
-            .overlay:hover {
-                height: 75%;
+        .cards {
+            .card {
+                .overlay:hover {
+                    height: 80%;
+                }
+                
             }
-
         }
     }
 }
