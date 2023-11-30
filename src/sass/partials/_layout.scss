@@ -82,6 +82,22 @@ main {
                 width: 80%;
             }
 
+            .overlay:hover {
+                height: 85%;
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 2560px) {
+    main {
+        .card {
+            .overlay:hover {
+                height: 75%;
+            }
+
         }
     }
 }
@@ -99,8 +115,8 @@ main {
                 width: 80%;
             }
 
-            .overlay{
-                height: 70%;
+            .overlay:hover{
+                height: 67%;
             }
         }
     }
@@ -120,6 +136,10 @@ main {
                 button {
                     font-size: 0.8rem;
                 }
+
+                .overlay:hover {
+                    height: 62%;
+                }
             }
         }
 
@@ -134,16 +154,34 @@ main {
                 font-size: 0.8rem;
             }
         }
+
         .cards {
             grid-template-columns: repeat(2, 1fr);
             gap: 1rem;
             margin: 2rem 10%;
-        }
 
-        .card {
-            img {
-                width: 80%;
+            .card {
+                img {
+                    width: 80%;
+                }
+    
+                .overlay:hover {
+                    height: 60%;
+                }
             }
         }
+
     }
 }   
+
+@media screen and (max-width: 375px) {
+    main {
+        .cards {
+            .card {
+                .overlay:hover {
+                    height: 50%;
+                }
+            }
+        }
+     }
+}

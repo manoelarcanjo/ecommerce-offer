@@ -176,6 +176,14 @@ main .cards .card .overlay:hover {
   main .card img {
     width: 80%;
   }
+  main .card .overlay:hover {
+    height: 85%;
+  }
+}
+@media screen and (max-width: 2560px) {
+  main .card .overlay:hover {
+    height: 75%;
+  }
 }
 @media screen and (max-width: 1024px) {
   main .cards {
@@ -186,8 +194,8 @@ main .cards .card .overlay:hover {
   main .card img {
     width: 80%;
   }
-  main .card .overlay {
-    height: 70%;
+  main .card .overlay:hover {
+    height: 67%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -202,6 +210,9 @@ main .cards .card .overlay:hover {
   main .cards .card button {
     font-size: 0.8rem;
   }
+  main .cards .card .overlay:hover {
+    height: 62%;
+  }
 }
 @media screen and (max-width: 430px) {
   main .containerMain h4 {
@@ -212,8 +223,16 @@ main .cards .card .overlay:hover {
     gap: 1rem;
     margin: 2rem 10%;
   }
-  main .card img {
+  main .cards .card img {
     width: 80%;
+  }
+  main .cards .card .overlay:hover {
+    height: 60%;
+  }
+}
+@media screen and (max-width: 375px) {
+  main .cards .card .overlay:hover {
+    height: 50%;
   }
 }
 footer {
