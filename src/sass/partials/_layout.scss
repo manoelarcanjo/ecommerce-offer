@@ -71,19 +71,13 @@ main {
 
 @media screen and (max-width: 2560px) {
     main {
-        .cards {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            margin: 2rem 10%;
-        }
-
         .card {
             img {
                 width: 80%;
             }
 
             .overlay:hover {
-                height: 85%;
+                height: 80%;
             }
 
         }
@@ -91,12 +85,24 @@ main {
 }
 
 
-@media screen and (max-width: 2560px) {
+@media screen and (max-width: 1900px) {
+    main {
+        .card {
+            .overlay:hover {
+                height: 75%;
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
     main {
         .cards {
             .card {
                 .overlay:hover {
-                    height: 80%;
+                    height: 75%;
                 }
                 
             }

@@ -1,4 +1,13 @@
-* {
+::-webkit-scrollbar {
+    background-color: $gray-color;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border-radius: 1rem;
+}
+
+*{
     padding: 0;
     margin: 0;
     border: 0;

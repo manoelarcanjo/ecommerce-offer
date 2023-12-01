@@ -1,3 +1,12 @@
+::-webkit-scrollbar {
+  background-color: #A5A1A1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5CA720;
+  border-radius: 1rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -168,21 +177,21 @@ main .cards .card .overlay:hover {
 }
 
 @media screen and (max-width: 2560px) {
-  main .cards {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin: 2rem 10%;
-  }
   main .card img {
     width: 80%;
   }
   main .card .overlay:hover {
-    height: 85%;
+    height: 80%;
   }
 }
-@media screen and (max-width: 2560px) {
+@media screen and (max-width: 1900px) {
+  main .card .overlay:hover {
+    height: 75%;
+  }
+}
+@media screen and (max-width: 1440px) {
   main .cards .card .overlay:hover {
-    height: 80%;
+    height: 75%;
   }
 }
 @media screen and (max-width: 1024px) {
